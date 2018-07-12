@@ -1,0 +1,10 @@
+<h2>Your Movies</h2>
+
+<ul>
+  <li *ngFor="let oneMovie of myMovieServ.getMovies()">
+    <h3>{{oneMovie.title}}</h3>
+    <p>ID: {{oneMovie.id}}</p>
+    <img [src]="oneMovie.poster" />
+    <a [routerLink]="['/movie', oneMovie.id]">See Details</a>
+  </li>
+</ul>

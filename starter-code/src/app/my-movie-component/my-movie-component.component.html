@@ -1,0 +1,6 @@
+<li "let oneMovie of myMovieServ.getMovie()">
+  <h3>{{oneMovie.title}}</h3>
+  <p>ID: {{oneMovie.id}}</p>
+  <img [src]="oneMovie.poster" />
+  <a "let oneMovie of myMovieServ.getMovies()" [routerLink]="['/movie', oneMovie.id]">See Details</a>
+</li>
